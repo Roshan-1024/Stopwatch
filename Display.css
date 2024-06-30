@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: #c5d6e0;
+}
+
+button {
+    cursor: pointer;
+    outline:none;
+}
+
+#Stopwatch, #Timer{
+    position: absolute;
+    width: 170px;
+    height: 50px;
+    background: rgba(191, 193, 188, 0.5);
+    border: 3px solid black;
+    top: 30px;
+    left: 400px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#Stopwatch:hover, #Timer:hover{
+    background: rgba(191, 193, 188, 1);
+}
+
+#Container0 {
+    background: #83878d;
+    position: absolute;
+    top: 100px;
+    left: 385px;
+    height: 110px;
+    width: 220px;
+    cursor:default;
+}
+
+#Timer {
+    left: 500px;
+}
+
+div {
+    display: inline-block;
+    position: relative;
+    top: 10px;
+    background: #435770;
+    width: 60px;
+    height: 70px;
+    text-align: center;
+    font-size: 40px;
+    color: white;
+    padding-top: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+
+#Num1 {
+    left: 10px;
+}
+
+#Num2 {
+    left: 15px;
+}
+
+#Num3 {
+    left: 20px;
+}
+
+button#Start, button#Reset, button#Pause, button#Resume, button#Lap { /*This is for the other elements too*/
+    position: absolute;
+    top: 250px;
+    display: inline-block;
+    width: 100px;
+    height: 50px;
+    background: #ffae42;
+    color: white;
+    font-size: 18px;
+    border: 4px solid #f46e31;
+    border-radius: 10px;
+    font-family: 'Roboto', sans-serif;
+}
+
+button#Start {
+    left: 330px;
+}
+
+button#Reset {
+    left:330px;
+}
+
+button#Pause, button#Resume{
+    left:445px;
+}
+
+button#Lap{
+    left:560px;
+}
+
+p.Laps {
+    position: absolute;
+    height: 40px;
+    width: calc(100% - 10px);
+    background: #f2eff6;
+    color: black;
+    font-size: 20px;
+    border-left: 5px solid green;
+    padding-top: 10px;
+    padding-left: 5px;
+    font-family: 'Roboto', sans-serif;
+}
